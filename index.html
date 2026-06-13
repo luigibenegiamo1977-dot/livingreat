@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Livingreat: idee e prodotti per vivere al meglio ogni spazio della tua casa e del tuo giardino.">
+  <title>Livingreat | Casa, giardino e outdoor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Livingreat, torna alla home">
+      <span class="brand-mark">L</span>
+      <span><strong>LIVINGREAT</strong><small>Live great. Live home.</small></span>
+    </a>
+    <nav aria-label="Navigazione principale">
+      <a href="#cataloghi">Cataloghi</a>
+      <a href="#categorie">Categorie</a>
+      <a href="#prodotti">In evidenza</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a class="button button-small" href="https://wa.me/393406289776" target="_blank" rel="noreferrer">WhatsApp</a>
+    <button class="menu-toggle" aria-label="Apri menu">Menu</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Casa, giardino e tempo libero</p>
+        <h1>Ogni spazio può diventare il tuo <em>posto preferito.</em></h1>
+        <p class="hero-text">Una selezione completa per progettare, arredare e vivere al meglio gli spazi esterni. Scopri i cataloghi Livingreat e chiedici consiglio.</p>
+        <div class="hero-actions">
+          <a class="button" href="#cataloghi">Esplora i cataloghi</a>
+          <a class="text-link" href="https://wa.me/393406289776?text=Ciao%2C%20vorrei%20informazioni%20sui%20prodotti%20Livingreat" target="_blank" rel="noreferrer">Parla con noi <span>↗</span></a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>2</dt><dd>cataloghi completi</dd></div>
+          <div><dt>200+</dt><dd>pagine di idee</dd></div>
+          <div><dt>1:1</dt><dd>consulenza diretta</dd></div>
+        </dl>
+      </div>
+      <div class="hero-visual" aria-label="Composizione di prodotti outdoor">
+        <div class="visual-card visual-main"><img src="assets/blu-73.jpg" alt="Illuminazione per esterno"></div>
+        <div class="visual-card visual-small"><img src="assets/verde-3.jpg" alt="Coltivazione in giardino"></div>
+        <span class="floating-label">Outdoor<br><strong>2026</strong></span>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Categorie principali">
+      <div>ARREDO GIARDINO · PISCINE · COLTIVAZIONE · BARBECUE · IRRIGAZIONE · ILLUMINAZIONE · ATTREZZI ·</div>
+    </section>
+
+    <section class="section catalog-section" id="cataloghi">
+      <div class="section-heading">
+        <div><p class="eyebrow">Sfoglia e lasciati ispirare</p><h2>Due mondi, un solo modo di vivere bene.</h2></div>
+        <p>I cataloghi raccolgono soluzioni per trasformare gli spazi aperti in luoghi da vivere ogni giorno.</p>
+      </div>
+      <div class="catalog-grid">
+        <article class="catalog-card catalog-blue">
+          <div class="catalog-card-copy">
+            <span class="catalog-number">01</span>
+            <p class="eyebrow">Tempo libero & outdoor</p>
+            <h3>Spazio Blu</h3>
+            <p>Piscine, barbecue, arredo da giardino, giochi, illuminazione e strutture outdoor.</p>
+            <a class="button button-light" href="https://wa.me/393406289776?text=Ciao%2C%20vorrei%20ricevere%20il%20catalogo%20Spazio%20Blu" target="_blank" rel="noreferrer">Richiedi il catalogo</a>
+          </div>
+          <img src="assets/blu-3.jpg" alt="Piscina dal catalogo Spazio Blu">
+        </article>
+        <article class="catalog-card catalog-green">
+          <div class="catalog-card-copy">
+            <span class="catalog-number">02</span>
+            <p class="eyebrow">Giardino & cura del verde</p>
+            <h3>Spazioverde 2026</h3>
+            <p>Coltivazione, attrezzi, irrigazione, macchine e complementi per il giardino.</p>
+            <a class="button button-light" href="https://wa.me/393406289776?text=Ciao%2C%20vorrei%20ricevere%20il%20catalogo%20Spazioverde%202026" target="_blank" rel="noreferrer">Richiedi il catalogo</a>
+          </div>
+          <img src="assets/verde-59.jpg" alt="Giardino dal catalogo Spazioverde">
+        </article>
+      </div>
+    </section>
+
+    <section class="section category-section" id="categorie">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">Esplora per categoria</p><h2>Tutto ciò che serve, spazio per spazio.</h2></div>
+        <div class="filter-row" role="group" aria-label="Filtra categorie">
+          <button class="filter active" data-filter="all">Tutte</button>
+          <button class="filter" data-filter="blu">Spazio Blu</button>
+          <button class="filter" data-filter="verde">Spazioverde</button>
+        </div>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="section product-section" id="prodotti">
+      <div class="product-top">
+        <div><p class="eyebrow">Una prima selezione</p><h2>Prodotti in evidenza</h2></div>
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="productSearch" type="search" placeholder="Cerca piscina, vaso, attrezzo..." aria-label="Cerca prodotti">
+        </label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>Nessun prodotto trovato. Scrivici e ti aiutiamo a cercarlo nel catalogo.</p>
+    </section>
+
+    <section class="advice-section">
+      <div>
+        <p class="eyebrow">Non sai da dove iniziare?</p>
+        <h2>Raccontaci il tuo spazio.<br><em>Troviamo insieme la soluzione.</em></h2>
+      </div>
+      <a class="button button-light" href="https://wa.me/393406289776?text=Ciao%2C%20vorrei%20un%20consiglio%20per%20il%20mio%20spazio" target="_blank" rel="noreferrer">Chiedi un consiglio</a>
+    </section>
+  </main>
+
+  <footer id="contatti">
+    <div class="footer-brand">
+      <strong>LIVINGREAT</strong>
+      <p>Idee e prodotti per vivere al meglio ogni spazio della tua casa.</p>
+    </div>
+    <div><span>WhatsApp</span><a href="https://wa.me/393406289776" target="_blank" rel="noreferrer">+39 340 628 9776</a></div>
+    <div><span>Email</span><a href="mailto:livingreat@upitaly.eu">livingreat@upitaly.eu</a></div>
+    <div><span>Cataloghi</span><a href="#cataloghi">Spazio Blu · Spazioverde</a></div>
+    <p class="copyright">© 2026 Livingreat</p>
+  </footer>
+
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <button class="modal-close" aria-label="Chiudi">×</button>
+    <div class="modal-content"></div>
+  </div>
+  <a class="whatsapp-float" href="https://wa.me/393406289776" target="_blank" rel="noreferrer" aria-label="Scrivici su WhatsApp">WA</a>
+  <script src="script.js"></script>
+</body>
+</html>
